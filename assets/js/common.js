@@ -12,15 +12,11 @@ $('document').ready(function () {
         console.log("listBooks");
     };
 
-    var viewBook = function (bookId) {
-        console.log("viewBook: bookId is populated: " + bookId);
-    };
-
     var allroutes = function () {
         var route = window.location.hash.slice(2);
         var sections = $('section');
         var section;
-        
+
         section = sections.filter('[data-route=' + route + ']');
         if (section.length) {
             sections.hide(200);
@@ -35,8 +31,7 @@ $('document').ready(function () {
     //
     var routes = {
         '/author': showAuthorInfo,
-        '/books': listBooks,
-        '/books/view/:bookId': viewBook
+        '/books': listBooks
     };
 
     //
