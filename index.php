@@ -18,8 +18,6 @@
 <body>
 <div class="container">
     <?php include_once "header_menu.php" ?>
-
-
     <section data-route="author" class="app">Author Name {{ message }}</section>
     <section data-route="books">Book1, Book2, Book3</section>
     <ul>
